@@ -2,7 +2,7 @@
 
 # ACF File Picker Field
 
-An Advanced Custom Field to pick a file from a chosen directory.
+A Advanced Custom Field to pick a file from a chosen directory.
 
 -----------------------
 

@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 SHORT_DESCRIPTION
 
-An Advanced Custom Field to pick a file from a chosen directory.
+A Advanced Custom Field to pick a file from a chosen directory.
 
 EXTENDED_DESCRIPTION
 
