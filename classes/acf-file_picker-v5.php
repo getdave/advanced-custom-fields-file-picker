@@ -169,7 +169,7 @@ class Field extends \acf_field {
 	
 		
 		/*
-		*  Create a simple text input using the 'font_size' setting.
+		* Create a simple text input using the 'font_size' setting.
 		*/
 		
 		?>
