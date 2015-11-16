@@ -1,6 +1,8 @@
 <?php
 
-class acf_field_file_picker extends acf_field {
+namespace ACFFilePicker;
+
+class Field extends \acf_field {
 	
 	
 	/*
@@ -44,7 +46,7 @@ class acf_field_file_picker extends acf_field {
 		*/
 		
 		$this->defaults = array(
-			'font_size'	=> 14,
+			
 		);
 		
 		
@@ -77,9 +79,7 @@ class acf_field_file_picker extends acf_field {
 	*  @return	n/a
 	*/
 	
-	function render_field_settings( $field ) {
-		
-
+	public function render_field_settings( $field ) {
 		
 
 		/*
@@ -91,13 +91,15 @@ class acf_field_file_picker extends acf_field {
 		*  More than one setting can be added by copy/paste the above code.
 		*  Please note that you must also have a matching $defaults value for the field name (font_size)
 		*/
+	
+		$theme_dir = $this->get_theme_directory();
 		
 		acf_render_field_setting( $field, array(
 			'label'			=> __('File Location','acf-file_picker'),
 			'instructions'	=> __('Enter the path to the directory where you files are located relative to your Theme (stylesheet) directory.','acf-file_picker'),
 			'type'			=> 'text',
 			'name'			=> 'file_location',
-			'prepend'		=> $this->get_theme_directory() . '/',
+			'prepend'		=>  $theme_dir . '/',
 		));
 
 		acf_render_field_setting( $field, array(
@@ -107,8 +109,8 @@ class acf_field_file_picker extends acf_field {
 			'placeholder'	=> 'eg: *.{png,jpg,gif}',
 			'name'			=> 'file_glob',
 		));
-
 	}
+
 
 	private function get_theme_directory() {
 		return substr( get_stylesheet_directory(), strlen( get_theme_root() ));
@@ -586,7 +588,6 @@ class acf_field_file_picker extends acf_field {
 }
 
 
-// create field
-new acf_field_file_picker();
+
 
 ?>
