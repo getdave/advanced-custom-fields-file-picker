@@ -34,5 +34,8 @@ This ACF field type is compatible with:
 
 == Changelog ==
 
+= 1.1.0 =
+* Addition of basic automated tests
+
 = 1.0.0 =
 * Initial Release.
