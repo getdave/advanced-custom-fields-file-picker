@@ -34,6 +34,12 @@ This ACF field type is compatible with:
 
 == Changelog ==
 
+= 1.1.2 =
+* Add annotations to Plugin comment block so details show up in WP Plugins in the Admin.
+
+= 1.1.1 =
+* ...something
+
 = 1.1.0 =
 * Addition of basic automated tests
 

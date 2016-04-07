@@ -2,14 +2,15 @@
 
 /*
 Plugin Name: Advanced Custom Fields: File Picker
-Plugin URI: PLUGIN_URL
-Description: SHORT_DESCRIPTION
+Plugin URI: https://github.com/getdave/advanced-custom-fields-file-picker
+Description: Creates a new field type which allows you to pick files from a directory. Typically useful for picking SVG icons.
 Version: 1.0.0
-Author: AUTHOR_NAME
-Author URI: AUTHOR_URL
+Author: David Smith
+Author URI: www.aheadcreative.co.uk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
 
 
 // 1. set text domain
